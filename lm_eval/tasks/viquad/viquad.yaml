@@ -1,0 +1,27 @@
+task: viquad
+dataset_path: taidng/UIT-ViQuAD2.0
+output_type: generate_until
+training_split: train
+validation_split: validation
+test_split: validation
+doc_to_text: "Đoạn văn sau:\n{{context.strip()}}\n\nCâu hỏi:\n{{question.strip()}}\n\nTrả lời ngắn gọn và chính xác:"
+doc_to_target: "{{answers.text[0] if answers.text|length > 0 else ''}}"
+generation_kwargs:
+  until:
+    - "\n"
+  max_gen_toks: 64
+  do_sample: false
+  temperature: 1.0
+process_results: !function utils.process_results
+metric_list:
+  - metric: judge_score
+    aggregation: !function utils.judge_aggregate
+    higher_is_better: true
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_case: true
+    ignore_punctuation: true
+metadata:
+  version: 1.0
+
