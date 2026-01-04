@@ -1,0 +1,16 @@
+group: vnhsge
+task:
+  - vnhsge_biology
+  - vnhsge_chemistry
+  - vnhsge_civic_education
+  - vnhsge_english
+  - vnhsge_geography
+  - vnhsge_history
+  - vnhsge_mathematics
+  - vnhsge_physics
+aggregate_metric_list:
+  - metric: acc
+    weight_by_size: True
+metadata:
+  version: 1.0
+

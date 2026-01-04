@@ -1,0 +1,3 @@
+task: vnhsge_geography
+dataset_name: Geography
+include: _vnhsge_template.yaml

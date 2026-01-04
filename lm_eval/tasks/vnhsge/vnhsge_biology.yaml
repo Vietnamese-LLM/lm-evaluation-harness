@@ -1,0 +1,3 @@
+task: vnhsge_biology
+dataset_name: Biology
+include: _vnhsge_template.yaml

@@ -1,0 +1,3 @@
+task: vnhsge_civic_education
+dataset_name: CivicEducation
+include: _vnhsge_template.yaml

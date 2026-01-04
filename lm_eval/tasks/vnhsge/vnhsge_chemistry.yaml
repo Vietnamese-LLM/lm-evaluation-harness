@@ -1,0 +1,3 @@
+task: vnhsge_chemistry
+dataset_name: Chemistry
+include: _vnhsge_template.yaml

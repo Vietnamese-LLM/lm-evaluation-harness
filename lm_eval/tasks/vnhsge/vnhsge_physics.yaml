@@ -1,0 +1,3 @@
+task: vnhsge_physics
+dataset_name: Physics
+include: _vnhsge_template.yaml
