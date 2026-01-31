@@ -3,6 +3,7 @@ dataset_path: Elfsong/VMLU_Final_v2
 dataset_name: null
 test_split: train
 output_type: multiple_choice
+process_docs: !function utils.process_docs
 doc_to_text: "{{question.strip()}}\n{% for choice in choices %}{{choice.strip()}}\n{% endfor %}\nChọn đáp án đúng (A, B, C hoặc D).\nĐáp án đúng là:"
 doc_to_target: "{{ {'A':0, 'B':1, 'C':2, 'D':3}[answer] }}"
 doc_to_choice: ["A", "B", "C", "D"]
