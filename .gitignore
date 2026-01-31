@@ -48,3 +48,4 @@ examples/wandb/
 
 #uv
 uv.lock
+evaluation_results/*
