@@ -12,7 +12,6 @@ do
         --tasks vmlu_final_v2 \
         --batch_size auto \
 	--log_samples \
-        --apply_chat_template \
         --output_path "./evaluation_results/iter_${formatted_step}" \
         --wandb_args project=vlm-eval,name=eval_iter_stage_duy_${formatted_step}
 done
