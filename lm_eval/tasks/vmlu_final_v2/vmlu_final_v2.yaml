@@ -4,7 +4,7 @@ dataset_name: null
 test_split: train
 output_type: multiple_choice
 process_docs: !function utils.process_docs
-doc_to_text: "<|im_start|>user\nHãy chọn đáp án đúng cho câu hỏi trắc nghiệm sau.\nChỉ trả lời bằng một chữ cái (A, B, C hoặc D).\n\n{{question.strip()}}\n\nA. {{choices[0].strip()}}\nB. {{choices[1].strip()}}\nC. {{choices[2].strip()}}\nD. {{choices[3].strip()}}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+doc_to_text: "<|im_start|>user\nHãy chọn đáp án đúng cho câu hỏi trắc nghiệm sau.\nChỉ trả lời bằng một chữ cái (A, B, C hoặc D).\n\n{{question.strip()}}\n\n{{choices[0].strip()}}\n{{choices[1].strip()}}\n{{choices[2].strip()}}\n{{choices[3].strip()}}<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
 doc_to_target: "{{ {'A':0, 'B':1, 'C':2, 'D':3}[answer] }}"
 doc_to_choice: ["A", "B", "C", "D"]
 
