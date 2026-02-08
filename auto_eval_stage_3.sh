@@ -1,9 +1,5 @@
 #!/bin/bash
-START_STEP=1000
-END_STEP=10000
-STEP_SIZE=500
-
-for step in {${START_STEP}..${END_STEP}..${STEP_SIZE}}
+for step in {1000..10000..500}
 do
     formatted_step=$(printf "%07d" $step)
     
