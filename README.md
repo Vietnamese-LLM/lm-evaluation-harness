@@ -1,6 +1,6 @@
 # Language Model Evaluation Harness
 
-# For Vietnamese-LLM Project, please check [this document]() to run evaluation.
+🔮 For Vietnamese-LLM Project, please check [this document](https://github.com/Vietnamese-LLM/lm-evaluation-harness/blob/main/vllm_instruction.md) to run evaluation.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10256836.svg)](https://doi.org/10.5281/zenodo.10256836)
 
